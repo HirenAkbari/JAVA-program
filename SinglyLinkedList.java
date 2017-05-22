@@ -119,7 +119,7 @@ class LinkedList
 			if(i==pos)
 			{
 			Node temp=current.getLink();
-		    current.setLink(new_node);
+		    	current.setLink(new_node);
 			current.setLink(temp);
 			break;
 			}
@@ -155,8 +155,8 @@ class LinkedList
 			return;
 		}
 		
-		Node ptr = head;
-        pos = pos - 1 ;
+          Node ptr = head;
+         pos = pos - 1 ;
         for (int i = 1; i < size - 1; i++) 
         {
             if (i == pos) 
@@ -250,13 +250,13 @@ public class SinglyLinkedList
 				break;
 				
 			case 4:
-				  System.out.println("Enter deletePos");
-				   int p = sc.nextInt() ;
-                if (p < 1 || p > list.getSize() )
-                    System.out.println("Invalid position\n");
-                else
-                    list.deletePos(p);
-                break;
+			     System.out.println("Enter deletePos");
+			       int p = sc.nextInt() ;
+                		if (p < 1 || p > list.getSize() )
+                    		System.out.println("Invalid position\n");
+                		else
+                   		 list.deletePos(p);
+               			 break;
 			
 			case 5:
 				System.out.println("Empty status="+list.isEmpty());
